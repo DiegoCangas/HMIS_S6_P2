@@ -1,8 +1,11 @@
 package ual.hmis.asignatura;
 
 import java.util.ArrayList;
-import java.util.*;
 
+/**
+ * @author Diego Cangas
+ *
+ */
 public class Actividad {
 
 	private String nombre; // nombre de la actividad
@@ -10,12 +13,11 @@ public class Actividad {
 	private boolean apta;
 	private double puntuacionTotal;
 
-
 	public String getNombre() {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(final String nombre) {
 		this.nombre = nombre;
 	}
 
@@ -23,7 +25,7 @@ public class Actividad {
 		return ejercicios;
 	}
 
-	public void setEjercicios(ArrayList<Ejercicio> ejercicios) {
+	public void setEjercicios(final ArrayList<Ejercicio> ejercicios) {
 		this.ejercicios = ejercicios;
 	}
 
@@ -31,22 +33,21 @@ public class Actividad {
 		return apta;
 	}
 
-	public void setApta(boolean apta) {
+	public void setApta(final boolean apta) {
 		this.apta = apta;
 	}
-
 
 	public double getPuntuacionTotal() {
 		return this.puntuacionTotal;
 	}
 
-	public void setPuntuacionTotal(double value) {
+	public void setPuntuacionTotal(final double value) {
 		this.puntuacionTotal = value;
 	}
 
-	public void agregarEjercicioCalificado(String nombreEjercicio, double puntuacion) {
+	public void agregarEjercicioCalificado(final String nombreEjercicio, final double puntuacion) {
 
-		Ejercicio nuevoEjercicio = new Ejercicio();
+		final Ejercicio nuevoEjercicio = new Ejercicio();
 
 		nuevoEjercicio.setNombre(nombreEjercicio);
 		nuevoEjercicio.setPuntuacion(puntuacion);
