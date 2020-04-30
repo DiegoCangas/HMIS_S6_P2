@@ -1,23 +1,39 @@
 package ual.hmis.asignatura;
 
 public class Ejercicio {
+/**
+ * nombre.
+ */
+private String nombre;
+/**
+ * puntuacion.
+ */
+private double puntuacion;
 
-	private String nombre;
-	private double puntuacion;
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public double getPuntuacion() {
-		return puntuacion;
-	}
-
-	public void setPuntuacion(double puntuacion) {
-		this.puntuacion = puntuacion;
-	}
+/**
+ * 
+ * @return nombre
+ */
+public String getNombre() {
+return nombre;
+}
+/**
+ * @param nombre
+ */
+public void setNombre(final String nombre) {
+this.nombre = nombre;
+}
+/**
+ * @return puntuacion
+ */
+public double getPuntuacion() {
+return puntuacion;
+}
+/**
+ * 
+ * @param puntuacion
+ */
+public void setPuntuacion(final double puntuacion) {
+this.puntuacion = puntuacion;
+}
 }
